@@ -1,0 +1,102 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Employee Def Service",
+		"description": "This is the Employee Def Service used by the IIB BetaWorks REST API example",
+		"version": "1.0.0"
+	},
+	"paths": {
+	},
+	"definitions": {
+		"Department": {
+			"required": ["departmentNumber",
+			"location",
+			"name"],
+			"properties": {
+				"departmentNumber": {
+					"type": "string",
+					"description": "Department number"
+				},
+				"admrdept": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string",
+					"description": "Department name"
+				},
+				"location": {
+					"type": "string",
+					"description": "Location"
+				}
+			},
+			"description": "Department resource representation"
+		},
+		"Employee": {
+			"required": ["dateOfBirth",
+			"employeeNumber",
+			"firstName",
+			"hireDate",
+			"lastName",
+			"middleInitial",
+			"sex"],
+			"properties": {
+				"employeeNumber": {
+					"type": "string",
+					"description": "Employee number"
+				},
+				"dateOfBirth": {
+					"type": "string",
+					"format": "date-time",
+					"description": "Date of birth in ISO-8601 format"
+				},
+				"commission": {
+					"type": "number",
+					"format": "double",
+					"description": "Commission"
+				},
+				"educationLevel": {
+					"type": "integer",
+					"format": "int32",
+					"description": "Education Level"
+				},
+				"firstName": {
+					"type": "string",
+					"description": "First name"
+				},
+				"hireDate": {
+					"type": "string",
+					"format": "date-time",
+					"description": "Hire Date  in ISO-8601 format"
+				},
+				"job": {
+					"type": "string",
+					"description": "Job"
+				},
+				"lastName": {
+					"type": "string",
+					"description": "Last name"
+				},
+				"middleInitial": {
+					"type": "string",
+					"description": "Middle initial"
+				},
+				"phoneNumber": {
+					"type": "string",
+					"description": "Phone Number"
+				},
+				"salary": {
+					"type": "number",
+					"format": "double",
+					"description": "Salary"
+				},
+				"sex": {
+					"type": "string",
+					"description": "Sex",
+					"enum": ["M",
+					"F"]
+				}
+			},
+			"description": "Employee resource representation"
+		}
+	}
+}
