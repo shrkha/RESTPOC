@@ -4,7 +4,7 @@
         "version":"4.0.0",
         "title":"cdi-crud"
     },
-    "host":"",
+    "host":"api.uber2.com",
     "basePath":"/cdi-crud/rest",
     "schemes":[
         "http"
